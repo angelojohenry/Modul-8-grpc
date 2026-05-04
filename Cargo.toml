@@ -1,7 +1,15 @@
 [package]
 name = "grpc-tutorial"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+
+[[bin]]
+name = "grpc-server"
+path = "src/grpc_server.rs"
+
+[[bin]]
+name = "grpc-client"
+path = "src/grpc_client.rs"
 
 [dependencies]
 tonic = "0.7"
